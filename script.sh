@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo PID $$
-whoami
+echo The script PID is $$
+echo It is run by $(whoami)
 ls -la /proc/$$/fd/
 echo $$ stdout > /proc/$$/fd/1
 echo $$ stderr > /proc/$$/fd/2
