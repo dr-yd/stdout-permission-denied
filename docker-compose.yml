@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  app:
+    build: .
+    volumes:
+      - ./entrypoint.sh:/entrypoint.sh
+      - ./job.conf:/etc/supervisord.d/job.conf
+      - ./supervisord.conf:/etc/supervisord.conf
+      - ./script.sh:/usr/local/bin/script.sh
+    entrypoint: /entrypoint.sh
+    command: php-fpm
