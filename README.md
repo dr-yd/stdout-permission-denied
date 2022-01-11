@@ -12,3 +12,5 @@ Demo repo for a permission issue with PHP-FPM in Docker where a process is unabl
     app_1  | lr-x------ 1 www-data www-data 64 Jan 11 16:54 255 -> /usr/local/bin/script.sh
     app_1  | /usr/local/bin/script.sh: line 6: /proc/56/fd/1: Permission denied
     app_1  | /usr/local/bin/script.sh: line 7: /proc/56/fd/2: Permission denied
+    app_1  | /usr/local/bin/script.sh: line 8: /proc/self/fd/1: Permission denied
+    app_1  | /usr/local/bin/script.sh: line 9: /proc/self/fd/2: Permission denied
